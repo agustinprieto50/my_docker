@@ -47,7 +47,7 @@ class TestMember(unittest.TestCase):
         member = Member(name, surname, age, phone)
         memberKey = MemberService().add_member(member)
         self.assertDictEqual(Repository.membersList[memberKey],
-                             member.__dict__)
+                             member. __dict__)
 
     @parameterized.expand([
         (1, "Juan", "Bautista", 25, 2615656545),
