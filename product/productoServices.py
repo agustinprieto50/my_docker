@@ -25,18 +25,6 @@ class ProductoService():
             raise ValueError("El producto no existe")
         Repositorios.productosList.update({key: producto.__dict__})
 
-    # def insertion_sort_precio(self, lista, orden):
-    #     if orden == str('ascendente'):
-    # # We start from 1 since the first element is trivially sorted
-    #         for index in range(1, len(lista)):
-    #             currentValue = lista[index]["_precio"]
-    #             currentPosition = index
-
-    #             while currentPosition > 0 and lista[currentPosition - 1]
-    #                   > currentValue:
-    #                 lista[currentPosition] = lista[currentPosition - 1]
-    #                 currentPosition = currentPosition - 1
-
     def insertion_sort_precio(self, lista, tipo_orden):
         if tipo_orden == str("ascendente"):
             largo_indice = range(1, len(lista))
