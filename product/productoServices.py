@@ -22,5 +22,5 @@ class ProductoService():
 
     def update_producto(self, key, producto):
         if key not in Repositorios.productosList:
-            raise ValueError("El lproducto no existe")
+            raise ValueError("El producto no existe")
         Repositorios.productosList.update({key: producto.__dict__})
